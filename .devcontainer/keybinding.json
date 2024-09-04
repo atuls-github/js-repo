@@ -1,0 +1,7 @@
+[
+	{
+		"key": "Numpad_Add",
+		"command": "workbench.action.files.save",
+		"when": "editorTextFocus"
+	}
+]
