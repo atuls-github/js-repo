@@ -23,6 +23,7 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
+				"editor.tokenColorCustomizations.comments": "#a4a2a1",
 				"editor.fontSize": 20,
 				"terminal.integrated.fontSize": 20,
 				"editor.wordWrap": "on"
