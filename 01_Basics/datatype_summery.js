@@ -32,5 +32,5 @@ const myFunction = function(){        //declare function
 myFunction();  // Output: function created
 
 //find data type
-console.log(typeof /*variable*/ ) 
+console.log(typeof /*variable*/ anotherId);
 
