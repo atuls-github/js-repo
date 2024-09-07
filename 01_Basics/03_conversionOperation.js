@@ -39,7 +39,7 @@ let number3 = Number(true);//if false => 0
 // conversion of 1 or 0 in the Boolean
 let isLoggedIn = 1;
 let booleanisLoggedIn = Boolean(isLoggedIn);//boolean conversion
-console.log(typeof booleanisLoggedIn);
+// console.log(typeof booleanisLoggedIn);
 //  0      => false
 //  ""     => false
 //  "atul" => true
@@ -70,10 +70,10 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
 
 // console.log( (3 + 4) * 5 % 3);
 

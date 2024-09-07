@@ -36,7 +36,7 @@ myFunction();  // Output: function created
 
 /*-------------------------------------------------------------------*/
 
-//stack(primitive) and heap()
+//stack(primitive) and heap(NON primitive)
 
 //primitive
 let operatingSystem = "ubuntu";
