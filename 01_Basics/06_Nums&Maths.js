@@ -2,9 +2,9 @@ const score = 500;
 console.log(score);
 
 const balance = new Number (100.0051151);
-console.log(balance);
+console.log(balance);// output : 100.0051151
 
-console.log(balance.toString());// output : 1.2e+2
+console.log(balance.toString());// output : 100.0051151
 console.log(balance.toFixed(2));// output : 100.01
 
 
