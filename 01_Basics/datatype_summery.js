@@ -44,8 +44,8 @@ let operatingSystem = "ubuntu";
 let anotherOne = operatingSystem;
 anotherOne = "Windows";
 
-// console.log(anotherOne);
-// console.log(operatingSystem);
+console.log(anotherOne);
+console.log(operatingSystem);
 
 //heap
 let userOne = {
