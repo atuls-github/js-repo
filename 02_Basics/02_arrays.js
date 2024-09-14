@@ -1,8 +1,8 @@
 const marvel_heros = ["thor","Ironman","spiderman"]
 const dc_heros= ["superman","flash","batman"]
 
-// marvel_heros.push(dc_heros)  //push
-// console.log(marvel_heros);
+marvel_heros.push(dc_heros)  //push
+console.log(marvel_heros);
 
 // const newHeros = marvel_heros.concat(dc_heros); //concat method
 // console.log(newHeros);
@@ -27,7 +27,7 @@ let score1=100;
 let score2=200;
 let score3=300;
 
-console.log(Array.of(score1,score2,score3));//Returns a new array from a set of elements.
+// console.log(Array.of(score1,score2,score3));//Returns a new array from a set of elements.
 
 
 
