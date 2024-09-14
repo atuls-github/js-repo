@@ -23,6 +23,7 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
+				"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
 				"editor.tokenColorCustomizations.comments": "#a4a2a1",
 				"editor.fontSize": 20,
 				"terminal.integrated.fontSize": 20,
