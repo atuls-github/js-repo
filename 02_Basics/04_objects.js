@@ -49,15 +49,28 @@ const obj3 ={...obj1,...obj2};//spread operator  to combine the objects
 
 // ]
 
-console.log(tinderUser);
+// console.log(tinderUser);
 //some methods
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser));
 
 //check the property 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 
+const course = {
+    name : "js in hindi",
+    price : "999",
+    course_teacher : "hitesh",
+}
 
+// console.log(course.course_teacher)//access the course teacher name 
 
+//we can acces this with another method
+const {course_teacher}= course;
+// console.log(course_teacher);
+
+//another method
+const {course_teacher : instructor} = course; //give the value to instructor because the course_teacher is an key
+// console.log(instructor);
