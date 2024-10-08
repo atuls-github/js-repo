@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>DOM - Setting the background color of a paragraph</title>
+</head>
+<body>
+    <input id= toggleButton type="button" value="set the background-color" onclick="setBackground()"/>
+    <!-- <input type="button" value="remove background-color" onclick="removeBackground()"/> -->
+    <p>Lorem, ipsum.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+    <script>
+        function setBackground (){
+            const paragraph = document.getElementsByTagName("p");
+
+            const selectPara = paragraph[1];
+            if (selectPara.style.background === "green") {
+                    selectPara.style.background = ""; // Reset to original background
+                    document.getElementById("toggleButton").textContent = "Set Green Background";
+                } else {
+                    selectPara.style.background = "green"; // Set background to green
+                    document.getElementById("toggleButton").textContent = "Reset Background Color";
+                }
+            
+        }
+        // function removeBackground (){
+        //     const paragraph = document.getElementsByTagName("p");
+
+        //     const selectPara = paragraph[1];
+        //     selectPara.style.background = "";
+            
+        // }
+    </script>
+</body>
+</html>
