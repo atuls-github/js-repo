@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Reading and modifying the tree</title>
+</head>
+<body>
+    <input type="button" value="change the document" onclick="change()"/>
+    <h2>Heading</h2>
+    <p>Paragraph</p>
+
+   <script>
+    function change() {
+    // Get the first <h2> element and update its text content
+    const heading = document.getElementsByTagName("h2").item(0);
+    heading.firstChild.data = "A dynamic document";
+
+    // Get the first <p> element and update its text content
+    const para = document.getElementsByTagName("p").item(0);
+    para.firstChild.data = "This is the first paragraph";
+
+    // Check if the second paragraph already exists
+    // (by searching for a paragraph with the text "This is the second paragraph")
+    const existingPara = Array.from(document.getElementsByTagName("p")).find(p => p.textContent === "This is the second paragraph");
+
+    // If the second paragraph doesn't exist, create and append it
+    if (!existingPara) {
+        const newText = document.createTextNode("This is the second paragraph"); // Create new text node
+        const newElement = document.createElement("p"); // Create new <p> element
+        newElement.appendChild(newText); // Append text to the new paragraph
+        para.parentNode.appendChild(newElement); // Append new paragraph to the parent
+    }
+}
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom mdn - Setting text content</title>
+    <style>
+      .container{
+        display : flex;
+        flex-direction: column;
+        gap : 0.5rem;
+        
+
+      }
+      .story{
+        width: 200px;
+      }
+      button{
+        width : 200px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <textarea class="story"> </textarea>
+      <button id="set-text" type="button">Set text Content</button>
+      <button id="clear-text" type="button">Clear text Content</button>
+    </div>
+
+    
+
+  <script>
+    // querySelector: Selects the first element that matches the specified CSS selector.
+    // addEventListener: Attaches an event handler to an element, to be executed when the specified event occurs.
+    // textContent: A property that represents the text content of an element.
+
+    const text = document.body.querySelector(".story");
+
+    const setText = document.body.querySelector("#set-text");
+    setText.addEventListener("click", () => {
+      text.textContent = "clicked !!";
+    });
+
+    const clearText = document.body.querySelector("#clear-text");
+    clearText.addEventListener("click", () => {
+      text.textContent = "";
+    });
+  </script>
+
+  </body>
+</html>

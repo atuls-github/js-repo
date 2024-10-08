@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mdn dom - Adding child element</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+      }
+
+      button {
+        width: 100px;
+      }
+
+      div.parent {
+        border: 1px solid black;
+        padding: 5px;
+        width: 100px;
+        height: 100px;
+      }
+
+      div.child {
+        border: 1px solid red;
+        margin: 10px;
+        padding: 5px;
+        width: 80px;
+        height: 60px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent">parent</div>
+      <button id="add-child" type="button">Add a child</button>
+      <button id="remove-child" type="button">Remove child</button>
+    </div>
+
+    <script>
+      // Document.querySelector() to access the <div> and the buttons
+      // EventTarget.addEventListener() to listen for button clicks
+      // Document.createElement to create the element
+      // Node.appendChild() to add the child
+      // Node.removeChild() to remove the child.
+
+      // Select the parent <div> with class "parent" from the DOM
+      const parent = document.body.querySelector(".parent");
+
+      // Select the "Add a child" button by its ID "add-child"
+      const addChild = document.body.querySelector("#add-child");
+
+      // Add an event listener to the "Add a child" button
+      addChild.addEventListener("click", () => {
+        // Check if the parent already has more than 1 child node (to avoid adding multiple children)
+        if (parent.childNodes.length > 1) {
+          return; // Exit if there are already children
+        }
+
+        // Create a new <div> element to represent the child
+        const child = document.createElement("div");
+
+        // Add the class "child" to the newly created <div>
+        child.classList.add("child");
+
+        // Set the text content of the child <div> to "child"
+        child.textContent = "child";
+
+        // Append the newly created child <div> to the parent <div>
+        parent.appendChild(child);
+      });
+
+      // Select the "Remove child" button by its ID "remove-child"
+      const removeChild = document.body.querySelector("#remove-child");
+
+      // Add an event listener to the "Remove child" button
+      removeChild.addEventListener("click", () => {
+        // Select the first child element with class "child" inside the parent
+        const child = document.body.querySelector(".child");
+
+        // If a child exists, remove it from the parent <div>
+        if (child) {
+          parent.removeChild(child);
+        }
+      });
+    </script>
+  </body>
+</html>
