@@ -57,3 +57,8 @@ buttons.forEach(function(button){
   })
 })
 ```
+
+## project 2
+```javascript
+
+```
