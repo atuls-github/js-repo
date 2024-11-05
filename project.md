@@ -79,3 +79,13 @@ if(height === '' || height < 0 || isNaN(height) ){
   results.innerHTML= `<span>${bmi}</span>`
 }})
 ```
+
+## project 3 solution
+```javascript
+const clock = document.getElementById('clock')
+
+setInterval(function(){
+  let date = new Date;
+  clock.innerHTML = date.toLocaleTimeString();
+},1000)
+```
