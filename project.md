@@ -185,11 +185,4 @@ function newGame() {
     playGame = true;
   });
 }
-
-
-
-
-
-
-
 ```
